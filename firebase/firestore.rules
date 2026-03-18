@@ -1,0 +1,20 @@
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isAuth() { return request.auth != null; }
+    function isCompany(cid) { return isAuth() && request.auth.token.companyId == cid; }
+
+    match /appUsers/{uid} {
+      allow read, write: if request.auth.uid == uid;
+    }
+    match /companies/{cid} {
+      allow read: if isCompany(cid);
+      allow write: if isCompany(cid);
+      match /{col}/{docId} {
+        allow read: if isCompany(cid);
+        allow write: if isCompany(cid);
+      }
+    }
+  }
+}

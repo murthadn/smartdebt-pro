@@ -1,0 +1,10 @@
+
+{
+  "indexes": [
+    {"collectionGroup": "debts", "queryScope": "COLLECTION", "fields": [{"fieldPath": "status", "order": "ASCENDING"}, {"fieldPath": "dueDate", "order": "ASCENDING"}]},
+    {"collectionGroup": "installments", "queryScope": "COLLECTION", "fields": [{"fieldPath": "status", "order": "ASCENDING"}, {"fieldPath": "dueDate", "order": "ASCENDING"}]},
+    {"collectionGroup": "payments", "queryScope": "COLLECTION", "fields": [{"fieldPath": "paymentDate", "order": "DESCENDING"}, {"fieldPath": "createdAt", "order": "DESCENDING"}]},
+    {"collectionGroup": "customers", "queryScope": "COLLECTION", "fields": [{"fieldPath": "status", "order": "ASCENDING"}, {"fieldPath": "name", "order": "ASCENDING"}]}
+  ],
+  "fieldOverrides": []
+}

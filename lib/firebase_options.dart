@@ -11,13 +11,11 @@ class DefaultFirebaseOptions {
     }
   }
 
-  // TODO: استبدل هذه القيم من Firebase Console
-  // Project Settings > General > Your apps > Android
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'YOUR_API_KEY',
-    appId: 'YOUR_APP_ID',
-    messagingSenderId: 'YOUR_SENDER_ID',
-    projectId: 'YOUR_PROJECT_ID',
-    storageBucket: 'YOUR_PROJECT_ID.appspot.com',
+    apiKey: 'AIzaSyAZaaiNmZGSdyNK5aGxA_uqm7AetGC1MNY',
+    appId: '1:230437300622:android:898e05bc7289540f615cdf',
+    messagingSenderId: '230437300622',
+    projectId: 'smartdebt-pro',
+    storageBucket: 'smartdebt-pro.firebasestorage.app',
   );
 }

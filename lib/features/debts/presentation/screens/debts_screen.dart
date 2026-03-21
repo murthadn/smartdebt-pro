@@ -75,22 +75,3 @@ class DebtsScreen extends ConsumerWidget {
   }
 }
 
-class AddDebtScreen extends ConsumerWidget {
-  final String? customerId;
-  const AddDebtScreen({super.key, this.customerId});
-  @override
-  Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-    appBar: AppBar(title: const Text('دين جديد')),
-    body: const Center(child: Text('قريباً')),
-  );
-}
-
-class DebtDetailScreen extends ConsumerWidget {
-  final String debtId;
-  const DebtDetailScreen({super.key, required this.debtId});
-  @override
-  Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-    appBar: AppBar(title: const Text('تفاصيل الدين')),
-    body: const Center(child: Text('قريباً')),
-  );
-}

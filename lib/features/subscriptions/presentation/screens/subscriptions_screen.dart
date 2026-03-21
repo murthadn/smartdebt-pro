@@ -50,12 +50,3 @@ class SubscriptionsScreen extends ConsumerWidget {
   }
 }
 
-class AddSubscriptionScreen extends ConsumerWidget {
-  final String? customerId;
-  const AddSubscriptionScreen({super.key, this.customerId});
-  @override
-  Widget build(BuildContext context, WidgetRef ref) => Scaffold(
-    appBar: AppBar(title: const Text('اشتراك جديد')),
-    body: const Center(child: Text('قريباً')),
-  );
-}

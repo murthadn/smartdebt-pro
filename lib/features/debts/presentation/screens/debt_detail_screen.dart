@@ -70,7 +70,7 @@ class DebtDetailScreen extends ConsumerWidget {
                       child: Center(child: Text('\${inst['installmentNo']??i+1}',
                         style: TextStyle(fontWeight: FontWeight.w800, color: instStatus.statusColor)))),
                     title: Text(fmt.format(amount) + ' ر.س', style: const TextStyle(fontWeight: FontWeight.w700)),
-                    subtitle: Text('استحقاق: \${inst['dueDate']?.toString().substring(0,10)??'—'}', style: const TextStyle(fontSize: 12)),
+                    subtitle: Text('استحقاق: \${inst['dueDate']?.toString().substring(0,10)??'-'}', style: const TextStyle(fontSize: 12)),
                     trailing: instStatus != 'paid'
                       ? TextButton(onPressed: () => context.push('/payments/add?debtId=\$debtId&installmentId=\$instId'), child: const Text('سداد'))
                       : Container(padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
